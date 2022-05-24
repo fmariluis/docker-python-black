@@ -1,8 +1,10 @@
 # docker-python-black
 
-> Source for the [mccutchen/python-black][] docker image
+> Source for the [fmariluis/black][] multiarch Docker image
 
-A minimal docker image for running Python's [black] code formatter, useful in
+(Repo forked from https://github.com/mccutchen/docker-python-black)
+
+A minimal multiarch Docker image for running Python's [black] code formatter, useful in
 CI pipelines or other situations where avoiding local Python/virtualenv/etc
 installation is ideal.
 
@@ -19,7 +21,7 @@ An example CI step that will exit non-zero if any source code under the current
 directory needs to be formatted:
 
 ```bash
-docker run --rm -v $(pwd):/src mccutchen/python-black --check --diff /src
+docker run --rm -v $(pwd):/src fmariluis/black --check --diff /src
 ```
 
 ## Prior Art
