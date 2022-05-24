@@ -2,10 +2,10 @@ name: Track Black upstream releases and release image to DockerHub
 
 on:
   schedule:
-    - cron:  '55 * * * *'
+    - cron:  '0 0 * * *'  # once a day
 
 jobs:
-  scheduled:
+  build_and_push:
     runs-on: ubuntu-latest
     steps:
     - name: Check out this repo
