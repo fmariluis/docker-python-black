@@ -39,9 +39,10 @@ fi
 
 # Otherwise, build and push a new image for the new Black release.
 echo "Building version ${BLACK_VERSION} as ${DOCKER_REPO}:${BLACK_VERSION} ..."
-docker buildx --push \
+docker buildx build \
     -t "${DOCKER_REPO}:${BLACK_VERSION}" \
     -t "${DOCKER_REPO}:latest" \
     --build-arg BLACK_VERSION="${BLACK_VERSION}" \
     --platform linux/amd64,linux/arm/v7,linux/arm64 \
+    --push \
     "."
