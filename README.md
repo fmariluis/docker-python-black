@@ -37,7 +37,7 @@ Here are some other public images to consider:
 - [houzefaabba/python3-black][] (fewer downloads, public dockerfile, tracks black releases, but outdated)
 
 [black]: https://github.com/psf/black
-[mccutchen/python-black]: https://hub.docker.com/r/mccutchen/python-black
+[fmariluis/black]: https://hub.docker.com/r/fmariluis/black
 [kiwicom/black]: https://hub.docker.com/r/kiwicom/black
 [cytopia/black]: https://hub.docker.com/r/cytopia/black
 [houzefaabba/python3-black]: https://hub.docker.com/r/houzefaabba/python3-black
